@@ -1,0 +1,18 @@
+<h1>Novo Galpão</h1>
+<%=form_with(model: Warehouse.new) do |formulario|%>
+    <%=formulario.label :name, 'Nome'%>
+    <%=formulario.text_field :name%>
+    <%=formulario.label :description, 'Descrição'%>
+    <%=formulario.text_area :description%>
+    <%=formulario.label :code, 'Código'%>
+    <%=formulario.text_field :code%>
+    <%=formulario.label :adress, 'Endereço'%>
+    <%=formulario.text_field :adress%>
+    <%=formulario.label :city, 'Cidade'%>
+    <%=formulario.text_field :city%>
+    <%=formulario.label :cep, 'CEP'%>
+    <%=formulario.text_field :cep%>
+    <%=formulario.label :area, 'Área'%>
+    <%=formulario.number_field :area%>
+    <%=formulario.submit 'Enviar'%>
+<%end%>

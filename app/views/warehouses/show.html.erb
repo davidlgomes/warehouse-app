@@ -1,8 +1,10 @@
-Galpão <%=@warehouse.code%>
-Nome: <%=@warehouse.name%>
-Cidade: <%=@warehouse.city%>
-Área: <%=@warehouse.area%> m2
-Endereço: <%=@warehouse.adress%>
-CEP: <%=@warehouse.cep%>
-<%=@warehouse.description%>
+<%if @warehouse!=nil%>
+    Galpão <%=@warehouse.code%>
+    Nome: <%=@warehouse.name%>
+    Cidade: <%=@warehouse.city%>
+    Área: <%=@warehouse.area%> m2
+    Endereço: <%=@warehouse.adress%>
+    CEP: <%=@warehouse.cep%>
+    <%=@warehouse.description%>
+<%end%>
 <%=link_to 'Voltar', root_path%>
